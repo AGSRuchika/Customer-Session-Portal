@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <div class="container">
+      <a class="navbar-brand">
+        <img src="assets/logo1.png" alt="Logo" class="logo-img">
+      </a>
+      <div class="d-flex justify-content-center align-items-center flex-grow-1">
+        <h3 class="header-title">Customer Session Portal</h3>
+      </div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link">
+            <img src="assets/user.png" alt="User" class="user-img">
+          </a>
+        </li>
+      </ul>
+      <div class="user-dropdown" *ngIf="authService.isLoggedIn">
+        <img src="/assets/user.png" alt="User Icon">
+        <div class="dropdown-content">
+          <a href="#" (click)="logout()">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="header-line"></div> 
